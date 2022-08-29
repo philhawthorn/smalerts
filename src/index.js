@@ -37,6 +37,8 @@ setInterval(()=>{
 
     const now = new Date();
 
+    console.log(`Running Interval ${now}`)
+
     if(now.getMinutes() === 0 || now.getMinutes() === 30) {
 
         const yyyy = now.getFullYear();
