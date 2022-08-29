@@ -37,7 +37,7 @@ setInterval(()=>{
 
     const now = new Date();
 
-    if(now.getMinutes() === 0 || now.getMinutes() === 30 || true) {
+    if(now.getMinutes() === 0 || now.getMinutes() === 30) {
 
         const yyyy = now.getFullYear();
         const mm = `${now.getMonth()+1}`.padStart(2, '0');
