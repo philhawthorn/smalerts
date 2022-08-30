@@ -139,7 +139,9 @@ const processInterval = async () => {
                     console.log('Sent alert.')
                 }
             })                        
-        }    
+        } else {
+            console.log('Latest data already reported.');
+        }
     }
 }
 
