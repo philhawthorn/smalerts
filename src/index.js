@@ -66,7 +66,7 @@ const generateTable = (data, price, adjustment=(val)=>val*1) => {
     }, 0)
 
     const cumulativeCost = data.values.reduce((cumm, record)=>{
-        return cumm+=record.value*price
+        return cumm+=adjustment(record.value)*price
     }, 0)
 
     return [["Timestamp", "Usage", "Unit", "Cost"]].concat(data.values.map(row=>[row.timestamp, row.value])).map((row,index,array)=>{
